@@ -34,7 +34,7 @@ function CreateNote({ setNotes }: setNotesType) {
       <form className="create-note__form">
         <input
           type="text"
-          placeholder="Title"
+          placeholder="Add a Title"
           className="form-title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}

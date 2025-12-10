@@ -250,4 +250,20 @@ opacity:0.9;
         font-size: 1.5rem;
     }
 }
-/*--color-danger: rgb(249, 84, 84);*/
+@media screen and (max-width: 290px){
+   
+    .notes__heading{
+        width: 55vw;
+        font-size: 1rem;
+        
+    }
+    .notes__input{
+        width: 55vw;
+    }
+    .notes__container{
+        padding: 0.2rem 0.2rem;
+    }
+    .empty__notes{
+        font-size: 1rem;
+    }
+}

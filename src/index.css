@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     text-decoration: none;
+}
+body{
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(223, 217, 236);
+}
+.notes__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+    background-color: rgb(44, 4, 82);
+}
+.notes__heading{
+    width: 22vw;
+    color: #fefefe;
+    font-size: 2rem;
+    text-align: center;
+}
+.notes__input{
+    width: 22vw;
+    outline: none;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+}
+.btn{
+   padding: 0.4rem 0.6rem;
+   font-size: 1rem;
+   border: none;
+   border-radius: 0.2rem;
+   background-color: #fefefe;
+   cursor: pointer;
+   text-align: center;
+   transition: all 0.2s ease-in;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.notes__container{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    padding: 2rem 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+   
+}
+.add__btn{
+   position: absolute;
+   bottom: 0;
+   right:0;
+   padding: 0.5rem 0.8rem;
+   background-color:  rgb(44, 4, 82);
+   color: #fefefe;
+   font-size: 1.8rem;
+   text-align: center;
+   margin-bottom: 3rem;
+   margin-right: 4rem;
+   border-radius: 0.2rem;
+   position: fixed;
+}
+/*Note*/
+.note{
+  
+    height: 35vh;
+    border: 2px solid rgb(44, 4, 82);
+    border-radius: 0.4rem;
+      transition: all 300ms ease;
+}
+.note:hover .note__name{
+opacity:0.9;
+}
+.note__name{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color:   #7634d8;
+    color: #fefefe;
+    border-bottom: 2px solid rgb(44, 4, 82);
+}
+.note__box{
+    padding: 2rem;
+}
+.note__title{
+    font-size: 1.2rem;
+    color: #7634d8;
+}
+.note__date{
+ margin-top: 0.3rem;
+  color: rgb(44, 4, 82) ;
+  font-weight: 600;
+}
+/*createnote*/
+.create-note__header ,.edit-note__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(44, 4, 82);
+}
+.back-btn{
+    padding: 0.4rem 0.6rem;
+    padding-top: 0.5rem;
+   font-size: 1.2rem;
+   border: none;
+   border-radius: 0.2rem;
+   cursor: pointer;
+   text-align: center;
+   background: #fefefe;
+   transition: all 0.2s ease-in;
+}
+.back-btn:hover{
+    opacity: 0.9;
+}
+.save-btn{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+     border: none;
+     cursor: pointer;
+       background: rgb(23, 194, 23);
+       color: white;
+   transition: all 0.2s ease-in;
+}
+.save-btn:hover{
+    opacity: 0.9;
+}
+.create-note__form, .edit-note__form{
+    margin: 3rem auto;
+    width: 70vw;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border: 2px solid  rgb(44, 4, 82);
+    border-radius: 1.5rem;
+      overflow: hidden;
+}
+.form-title{
+    outline: none;
+    font-size: 3rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    background-color: #7634d8;
+    color: #fefefe;
+    border-bottom: 2px solid  rgb(44, 4, 82);
+}
+.form-title::placeholder{
+    color: #fefefe;
+}
+.form-details{
+    outline: none;
+    font-size: 1rem;
+     padding: 1rem 3rem;
+    border: none;
+    color: black;
+    font-weight: 600;
+}
+.form-details::placeholder{
+    color: #7634d8;
+}
+.danger{
+    background-color: rgb(249, 84, 84);
+    color: white;
+}
+.btns{
+    display: flex;
+    gap: 1rem;
+}
+.empty__notes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    font-size: 3rem;
+    color: rgb(44, 4, 82);
+    font-weight: 600;
+}
+
+
+
+
+
+
+@media screen and (max-width: 725px){
+    .notes__header{
+        gap:3rem;
+    }
+    .notes__heading{
+        width: 30vw;
+    }
+    .notes__input{
+        width: 30vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .notes__header{
+        gap:2rem;
+    }
+    .notes__heading{
+        width: 40vw;
+    }
+    .notes__input{
+        width: 40vw;
+    }
+    .add__btn{
+          margin-bottom: 2rem;
+     margin-right: 1.5rem;
+   padding: 0.3rem 0.6rem;
+    }
+    .create-note__form, .edit-note__form{
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .form-title{
+        padding: 1rem 1.2rem;
+    }
+    .form-details{
+        padding: 1rem 1.2rem;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .notes__header{
+        gap:1rem;
+    }
+    .notes__heading{
+        width: 50vw;
+        font-size: 1.5rem;
+        
+    }
+    .notes__input{
+        width: 50vw;
+    }
+    .notes__container{
+        padding: 0.2rem 0.2rem;
+    }
+}
+/*--color-danger: rgb(249, 84, 84);*/

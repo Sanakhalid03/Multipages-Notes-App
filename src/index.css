@@ -209,10 +209,10 @@ opacity:0.9;
         gap:2rem;
     }
     .notes__heading{
-        width: 40vw;
+        width: 45vw;
     }
     .notes__input{
-        width: 40vw;
+        width: 45vw;
     }
     .add__btn{
           margin-bottom: 2rem;
@@ -228,6 +228,9 @@ opacity:0.9;
     }
     .form-details{
         padding: 1rem 1.2rem;
+    }
+    .empty__notes{
+        font-size: 1.5rem;
     }
 }
 

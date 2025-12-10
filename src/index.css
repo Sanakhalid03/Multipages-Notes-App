@@ -236,8 +236,8 @@ opacity:0.9;
         gap:1rem;
     }
     .notes__heading{
-        width: 50vw;
-        font-size: 1.5rem;
+        width: 52vw;
+        font-size: 1.3rem;
         
     }
     .notes__input{
@@ -245,6 +245,9 @@ opacity:0.9;
     }
     .notes__container{
         padding: 0.2rem 0.2rem;
+    }
+    .empty__notes{
+        font-size: 1.5rem;
     }
 }
 /*--color-danger: rgb(249, 84, 84);*/
